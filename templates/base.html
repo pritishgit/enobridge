@@ -1,0 +1,17 @@
+{% load static %}
+<html>
+ <head>
+ <title>EnoBridge IT solutions</title>
+ <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400"
+ rel="stylesheet">
+ <body>
+ <header>
+ <h1><a href="{% url 'home' %}">EnoBridge IT solutions</a></h1>
+  <link href="{% static 'css/base.css' %}" rel="stylesheet">
+ </header>
+ <div>
+ {% block content %}
+ {% endblock content %}
+ </div>
+ </body>
+</html>
